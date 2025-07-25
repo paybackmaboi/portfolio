@@ -70,7 +70,7 @@ const App = () => {
       },
     ],
     contact: {
-      email: "roy.estorco@example.com",
+      email: "roy.estorco123@gmail.com",
       linkedin: "https://linkedin.com/in/royestorco",
       github: "https://github.com/royestorco",
     }
