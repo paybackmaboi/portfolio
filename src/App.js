@@ -101,7 +101,7 @@ const App = () => {
       },
       {
         title: 'Clinic consultation system',
-        description: 'Ongoing project to develop a Clinic Consultation System that allows patients to book appointments, view medical history, and communicate with healthcare providers. The system aims to enhance patient experience and streamline clinic operations. And soon to convert react to Next.js framework.',
+        description: 'Under development project that allows patients to book appointments, view medical history, and communicate with healthcare providers. The system aims to enhance patient experience and streamline clinic operations. And soon to convert react to Next.js framework.',
         tech: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'RESTful API', 'Mysql','axios'],
         liveUrl: '#',
         repoUrl: '#',
