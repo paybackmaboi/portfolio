@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 // --- CORRECTED: Removed 'ExternalLink' and 'Server' ---
-import { Linkedin, Github, Menu, X, Database, BrainCircuit } from 'lucide-react';
+import { Github, Menu, X, Database, BrainCircuit } from 'lucide-react';
 
 // --- CORRECTED IMPORTS: Fixed C# icon name and its import source ---
 import { SiJavascript, SiNodedotjs, SiHtml5, SiCss3, SiTailwindcss, SiReact, SiExpress, SiLaravel } from 'react-icons/si';
-import { TbBrandCSharp } from "react-icons/tb";
+import { TbBrandCSharp,TbBrandCpp } from "react-icons/tb";
 
 
 // Main App Component
@@ -45,6 +45,7 @@ const App = () => {
     skills: [
         { name: 'JavaScript (ES6+)', icon: <SiJavascript className="w-8 h-8 text-yellow-400" /> },
         { name: 'React', icon: <SiReact className="w-8 h-8 text-cyan-400" /> },
+        { name: 'C++', icon: <TbBrandCpp className="w-8 h-8 text-purple-400" /> },
         { name: 'C#', icon: <TbBrandCSharp className="w-8 h-8 text-purple-400" /> },
         { name: 'Node.js', icon: <SiNodedotjs className="w-8 h-8 text-green-400" /> },
          { name: 'Express.js', icon: <SiExpress className="w-8 h-8 text-gray-400" /> },
@@ -64,9 +65,9 @@ const App = () => {
         repoUrl: '#',
       },
       {
-        title: 'BPO tech Bridge AI',
+        title: 'BPO tech Bridge AI [Hackathon Project prototype]',
         description: "Intelligent career navigator that builds a personalized bridge from a BPO professional's current job to their future in tech. It's not just another job board or a list of courses. It's a smart, supportive, end-to-end ecosystem powered by AI.",
-        tech: ['React', 'Tailwind CSS','Node.js', 'Express', 'Sequelize', 'Mysql','Recharts','axios'],
+        tech: ['React', 'Tailwind CSS','Node.js', 'Express', 'Sequelize', 'Mysql','Recharts','axios','Lightswind UI'],
         liveUrl: '#',
         repoUrl: '#',
       },
@@ -78,9 +79,30 @@ const App = () => {
         repoUrl: '#',
       },
       {
-        title: 'Student Management System',
+        title: 'Student Management System [Capstone 2 project]',
         description: 'Developing a Student Management System to digitize and streamline school operations, featuring modules for student enrollment, grade management, and attendance tracking, and autmated report generation.',
-        tech: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'Sequelize', 'Mysql','Recharts','axios'],
+        tech: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'Sequelize', 'Mysql','Recharts','axios','RESTful API'],
+        liveUrl: '#',
+        repoUrl: '#',
+      },
+       {
+        title: 'CebuRoute: Jeepney Navigator [Personal Project]',
+        description: 'Designed and developed a full stack web application from concept to deployment to help Cebu commuters navigate jeepney routes.Implemented a key feature that calculates estimated fares based on distance, helping users budget their travel.',
+        tech: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'RESTful API', 'Mysql','axios'],
+        liveUrl: '#',
+        repoUrl: '#',
+      },
+      {
+        title: 'Scientific Calculator',
+        description: 'Developed a scientific calcuator using c++ that performs basic arithmetic operations, trigonometric functions, logarithmic calculations, and more. The calculator features a user-friendly interface and supports both integer and floating-point calculations.',
+        tech: ['c++'],
+        liveUrl: '#',
+        repoUrl: '#',
+      },
+      {
+        title: 'Clinic consultation system',
+        description: 'Ongoing project to develop a Clinic Consultation System that allows patients to book appointments, view medical history, and communicate with healthcare providers. The system aims to enhance patient experience and streamline clinic operations. And soon to convert react to Next.js framework.',
+        tech: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'RESTful API', 'Mysql','axios'],
         liveUrl: '#',
         repoUrl: '#',
       },
@@ -271,12 +293,12 @@ const App = () => {
                 {portfolioData.contact.email}
               </a>
               <div className="flex justify-center space-x-6 mt-8">
-                <a href={portfolioData.contact.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300">
+                {/* <a href={portfolioData.contact.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300">
                   <Github className="w-8 h-8" />
                 </a>
                 <a href={portfolioData.contact.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300">
                   <Linkedin className="w-8 h-8" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
