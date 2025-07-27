@@ -186,14 +186,24 @@ const App = () => {
       </header>
 
       <main>
-        {/* --- Hero Section --- */}
-        <section id="home" className="min-h-screen flex items-center justify-center bg-gray-900 pt-16">
-          <div className="text-center px-4">
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4">
+       {/* --- Hero Section --- UPDATED --- */}
+        <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden bg-gray-900">
+          
+          {/* Background Image */}
+          <img 
+            src="hi.jpg" 
+            alt="Personal background"
+            className="absolute inset-0 w-full h-full object-cover -z-100 "
+          />
+          
+          <div className="text-center px-4 z-10 flex flex-col items-center max-w-xl">
+            <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4 [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)]">
               <span className="block">Hi, I'm</span>
               <span className="block text-indigo-400 animate-pulse">{portfolioData.name}</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">{portfolioData.title}</p>
+            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto [text-shadow:1px_1px_3px_rgba(0,0,0,0.6)]">
+              {portfolioData.title}
+            </p>
             <button
               onClick={() => scrollToSection('projects')}
               className="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-500 transition duration-300 ease-in-out transform hover:scale-105"
